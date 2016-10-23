@@ -12,6 +12,10 @@
 		41A21C5B1DBB7B9D00D8AD26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A21C591DBB7B9D00D8AD26 /* Main.storyboard */; };
 		41A21C5D1DBB7B9E00D8AD26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A21C5C1DBB7B9E00D8AD26 /* Assets.xcassets */; };
 		41A21C601DBB7B9E00D8AD26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A21C5E1DBB7B9E00D8AD26 /* LaunchScreen.storyboard */; };
+		41AE1A101DBCA479003DD674 /* icon32_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 41AE1A0F1DBCA479003DD674 /* icon32_setting.png */; };
+		41AE1A121DBCA69B003DD674 /* icon16_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 41AE1A111DBCA69B003DD674 /* icon16_setting.png */; };
+		41FF3A9A1DBB896900C2787A /* AdModDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF3A981DBB896900C2787A /* AdModDef.swift */; };
+		41FF3A9B1DBB896900C2787A /* AdModMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF3A991DBB896900C2787A /* AdModMgr.swift */; };
 		620088A373CC1C59890EB9A2 /* Pods_HiddenPokemonSearcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E248C7C1EF6121EAC3AB3C09 /* Pods_HiddenPokemonSearcher.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +27,10 @@
 		41A21C5C1DBB7B9E00D8AD26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41A21C5F1DBB7B9E00D8AD26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41A21C611DBB7B9E00D8AD26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41AE1A0F1DBCA479003DD674 /* icon32_setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon32_setting.png; sourceTree = "<group>"; };
+		41AE1A111DBCA69B003DD674 /* icon16_setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon16_setting.png; sourceTree = "<group>"; };
+		41FF3A981DBB896900C2787A /* AdModDef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdModDef.swift; sourceTree = "<group>"; };
+		41FF3A991DBB896900C2787A /* AdModMgr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdModMgr.swift; sourceTree = "<group>"; };
 		8FF151C36442847F85EA1994 /* Pods-HiddenPokemonSearcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiddenPokemonSearcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-HiddenPokemonSearcher/Pods-HiddenPokemonSearcher.release.xcconfig"; sourceTree = "<group>"; };
 		E248C7C1EF6121EAC3AB3C09 /* Pods_HiddenPokemonSearcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiddenPokemonSearcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F30FEC3C5D9AF911FBF7E5C6 /* Pods-HiddenPokemonSearcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiddenPokemonSearcher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HiddenPokemonSearcher/Pods-HiddenPokemonSearcher.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,10 +71,14 @@
 			children = (
 				41A21C551DBB7B9D00D8AD26 /* AppDelegate.swift */,
 				41A21C571DBB7B9D00D8AD26 /* ViewController.swift */,
+				41FF3A981DBB896900C2787A /* AdModDef.swift */,
+				41FF3A991DBB896900C2787A /* AdModMgr.swift */,
 				41A21C591DBB7B9D00D8AD26 /* Main.storyboard */,
 				41A21C5C1DBB7B9E00D8AD26 /* Assets.xcassets */,
 				41A21C5E1DBB7B9E00D8AD26 /* LaunchScreen.storyboard */,
 				41A21C611DBB7B9E00D8AD26 /* Info.plist */,
+				41AE1A0F1DBCA479003DD674 /* icon32_setting.png */,
+				41AE1A111DBCA69B003DD674 /* icon16_setting.png */,
 			);
 			path = HiddenPokemonSearcher;
 			sourceTree = "<group>";
@@ -153,7 +165,9 @@
 			files = (
 				41A21C601DBB7B9E00D8AD26 /* LaunchScreen.storyboard in Resources */,
 				41A21C5D1DBB7B9E00D8AD26 /* Assets.xcassets in Resources */,
+				41AE1A121DBCA69B003DD674 /* icon16_setting.png in Resources */,
 				41A21C5B1DBB7B9D00D8AD26 /* Main.storyboard in Resources */,
+				41AE1A101DBCA479003DD674 /* icon32_setting.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41FF3A9B1DBB896900C2787A /* AdModMgr.swift in Sources */,
 				41A21C581DBB7B9D00D8AD26 /* ViewController.swift in Sources */,
 				41A21C561DBB7B9D00D8AD26 /* AppDelegate.swift in Sources */,
+				41FF3A9A1DBB896900C2787A /* AdModDef.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +273,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -307,6 +324,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

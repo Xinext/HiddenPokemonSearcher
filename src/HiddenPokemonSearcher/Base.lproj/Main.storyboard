@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="des-At-oRE">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--かくれポケモン探索-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HiddenPokemonSearcher" customModuleProvider="target" sceneMemberID="viewController">
@@ -14,15 +15,100 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="TopView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uv5-9F-U5N" userLabel="MainContentsView">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdY-nb-RCY" userLabel="VerticalCriterionView">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" id="Ayh-Xr-LQ8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.34509803921568627" green="0.396078431372549" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="TdY-nb-RCY" firstAttribute="leading" secondItem="uv5-9F-U5N" secondAttribute="leading" id="nL7-O8-Rbt"/>
+                                    <constraint firstItem="TdY-nb-RCY" firstAttribute="top" secondItem="uv5-9F-U5N" secondAttribute="top" id="sTB-LE-S3G"/>
+                                    <constraint firstAttribute="bottom" secondItem="TdY-nb-RCY" secondAttribute="bottom" id="zbh-jT-G63"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uv5-9F-U5N" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="1bf-ec-YYy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uv5-9F-U5N" secondAttribute="bottom" id="ILa-bW-XQG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uv5-9F-U5N" secondAttribute="trailing" constant="-20" id="MaI-yB-LK3"/>
+                            <constraint firstItem="uv5-9F-U5N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="PZP-nh-gtH"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="かくれポケモン探索" id="pgi-7i-R8o">
+                        <barButtonItem key="rightBarButtonItem" image="icon16_setting.png" id="ThW-l0-dlT">
+                            <connections>
+                                <segue destination="B8S-wl-DHv" kind="show" id="BOn-Ck-6B6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mainContentsBottomLayoutConstraint" destination="ILa-bW-XQG" id="EFU-Nh-ch8"/>
+                        <outlet property="mainContentsView" destination="uv5-9F-U5N" id="8G0-hP-hGm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+            <point key="canvasLocation" x="500.00000000000006" y="127.98913043478262"/>
+        </scene>
+        <!--設定-->
+        <scene sceneID="s6b-6t-8Te">
+            <objects>
+                <viewController title="設定" id="B8S-wl-DHv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i7N-9e-50v"/>
+                        <viewControllerLayoutGuide type="bottom" id="gLN-wx-iq1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TEE-1Y-2tr" userLabel="TopView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pqW-C4-dXn" userLabel="MainView">
+                                <color key="backgroundColor" red="0.34509803921568627" green="0.396078431372549" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pqW-C4-dXn" firstAttribute="top" secondItem="i7N-9e-50v" secondAttribute="bottom" id="3BB-JM-eIv"/>
+                            <constraint firstItem="gLN-wx-iq1" firstAttribute="top" secondItem="pqW-C4-dXn" secondAttribute="bottom" id="6UQ-L8-fnF"/>
+                            <constraint firstItem="pqW-C4-dXn" firstAttribute="leading" secondItem="TEE-1Y-2tr" secondAttribute="leading" id="ZWF-iD-ghD"/>
+                            <constraint firstAttribute="trailing" secondItem="pqW-C4-dXn" secondAttribute="trailing" id="xaW-qU-N89"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="og6-7c-AlC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1361" y="127"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GVQ-lj-dSf">
+            <objects>
+                <navigationController id="des-At-oRE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ob4-hh-evh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Cqj-8L-Qqd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q2x-Qb-TYf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-306" y="194"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon16_setting.png" width="16" height="16"/>
+    </resources>
 </document>
