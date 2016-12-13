@@ -2,9 +2,7 @@
 //  AppDelegate.swift
 //  HiddenPokemonSearcher
 //
-//  Created by Hiroaki Fujisawa on 2016/10/22.
-//  Copyright © 2016年 xinext. All rights reserved.
-//
+
 
 import UIKit
 
@@ -16,6 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // ナビゲーションバーの共通定義
+        UINavigationBar.appearance().barTintColor = UIColor.hexStr(hexStr: "58656e", alpha: 1.0)
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.hexStr(hexStr: "ffffff", alpha: 1.0)]
+        UINavigationBar.appearance().tintColor = UIColor.hexStr(hexStr: "bac1c7", alpha: 1.0)
+        
         return true
     }
 

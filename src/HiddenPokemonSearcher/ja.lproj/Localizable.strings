@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  HiddenPokemonSearcher
+*/
+
+"MSG_ALERT" = "注意";
+"MSG_INFO" = "情報";
+
+"MSG_OK" = "OK";
+"MSG_CANCEL" = "キャンセル";
+"MSG_YES" = "はい";
+"MSG_NO" = "いいえ";
+
+"MSG_LABEL_NEARBY_RADIUS" = "かくれているポケモンが表示される半径";
+"MSG_LABEL_GUIDE_IDLE" = "ポケモンの探索を開始する場合は、[探索開始]ボタンをタップしてください。";
+"MSG_LABEL_GUIDE_START" = "円の内側に目的のポケモンが隠れています。\n移動して「かくれているポケモン」から目的のポケモンが消える位置を探し、その位置で[消失(１回目)]ボタンをタップしてください。";
+"MSG_LABEL_GUIDE_SEARCH" = "青色の線上を目安に、再び目的のポケモンが表示される方向へ移動してください。そして再びまた目的のポケモンが消える位置を探し、その位置で[消失(２回目)]ボタンをタップしてください。";
+"MSG_LABEL_GUIDE_FINISH" = "円内の赤色の線上に、おそらく目的のポケモンが隠れています！";
+
+"MSG_ANNOTATION_START" = "開始位置";
+"MSG_ANNOTATION_FIRST" = "消失１回目";
+"MSG_ANNOTATION_SECOND" = "消失２回目";
+
+"MSG_BUTTON_CURRENT_PLACE" = "現在地";
+"MSG_BUTTON_SEARCH_START" = "探索開始";
+"MSG_BUTTON_DISAPPEAR_1ST" = "消失\n(１回目)";
+"MSG_BUTTON_DISAPPEAR_2ND" = "消失\n(２回目)";
+"MSG_BUTTON_RESET" = "リセット";
+
+"MSG_TO_SETTING_PAGE" = "設定画面へ";
+
+"MSG_LOCATION_REQ_AUTHORIZATION" = "このアプリケーションは、位置情報を必要とします。";
+"MSG_LOCATION_ERROR" = "位置情報の取得に失敗しました。";
+
+"MSG_RADIUS_LIMIT_ERROR" = "100m〜300mの範囲を指定してください。";
+
+"TITLE_MAIN" = "かくれポケモン探索";
+"TITLE_SETTINGS" = "設定";

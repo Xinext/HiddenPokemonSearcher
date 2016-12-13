@@ -8,7 +8,7 @@ import GoogleMobileAds
 /**
  - [ENG]The UIViewController for AdMod.
  - [JPN]AdMod管理用 UIViewController
- - Author: Hiroaki Fujisawa
+ - Author: xinext HF
  - Copyright: xinext
  - Date: 2016/10/19
  - Version: 1.0.0

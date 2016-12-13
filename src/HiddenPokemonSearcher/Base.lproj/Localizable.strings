@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  HiddenPokemonSearcher
+*/
+
+"MSG_ALERT" = "Alert";
+"MSG_INFO" = "Information";
+
+"MSG_OK" = "OK";
+"MSG_CANCEL" = "Cancel";
+"MSG_YES" = "Yes";
+"MSG_NO" = "No";
+
+"MSG_LABEL_NEARBY_RADIUS" = "The radius that Pokemon nearby is displayed";
+"MSG_LABEL_GUIDE_IDLE" = "When you start a search of target Pokemon, please touch a search [Search start] button.";
+"MSG_LABEL_GUIDE_START" = "The target Pokemon is hidden inside the circle. \nYou move from [SIGHTINGS] to the position where the target Pokemon disappears and tap the [Disapper(1st time)] button at that location.";
+"MSG_LABEL_GUIDE_SEARCH" = "You move in the direction in which the target Pokemon will be displayed again using the blue line as a guide. And you move  where the target Pokemon disappears and tap the [Disapper (2nd time)] button at that location.";
+"MSG_LABEL_GUIDE_FINISH" = "On the red line in the circle, probably the intended Pokemon is hidden!";
+
+"MSG_ANNOTATION_START" = "Start";
+"MSG_ANNOTATION_FIRST" = "1st";
+"MSG_ANNOTATION_SECOND" = "2nd";
+
+"MSG_BUTTON_CURRENT_PLACE" = "Current";
+"MSG_BUTTON_SEARCH_START" = "Detect\nstart";
+"MSG_BUTTON_DISAPPEAR_1ST" = "Disappear\n(1st time)";
+"MSG_BUTTON_DISAPPEAR_2ND" = "Disappear\n(2nd time)";
+"MSG_BUTTON_RESET" = "Reset";
+
+"MSG_TO_SETTING_PAGE" = "To setting page";
+
+"MSG_LOCATION_REQ_AUTHORIZATION" = "This application requires the location information.";
+"MSG_LOCATION_ERROR" = "Location information error";
+
+"MSG_RADIUS_LIMIT_ERROR" = "Please specify a range from 100m to 300m.";
+
+"TITLE_MAIN" = "SIGHTINGS Poke Detector";
+"TITLE_SETTINGS" = "Settings";
