@@ -34,5 +34,5 @@
 
 "MSG_RADIUS_LIMIT_ERROR" = "Please specify a range from 100m to 300m.";
 
-"TITLE_MAIN" = "SIGHTINGS Poke Detector";
+"TITLE_MAIN" = "SIGHTINGS Detector for PokeGo";
 "TITLE_SETTINGS" = "Settings";

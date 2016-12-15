@@ -2,4 +2,4 @@
   InfoPlist.strings
   HiddenPokemonSearcher
 */
-CFBundleDisplayName = "かくれポケモン";
+CFBundleDisplayName = "かくれポケ探索";
