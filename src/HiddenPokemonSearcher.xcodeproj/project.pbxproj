@@ -97,12 +97,12 @@
 				41FF3A981DBB896900C2787A /* AdModDef.swift */,
 				41FF3A991DBB896900C2787A /* AdModMgr.swift */,
 				41A602021DC7608000ED71CB /* MapMgr.swift */,
+				418B8E7F1DDC1FEE00EE2D6D /* PaddingLabel.swift */,
 				41A21C591DBB7B9D00D8AD26 /* Main.storyboard */,
 				41A21C5C1DBB7B9E00D8AD26 /* Assets.xcassets */,
 				41A21C5E1DBB7B9E00D8AD26 /* LaunchScreen.storyboard */,
 				41A21C611DBB7B9E00D8AD26 /* Info.plist */,
 				41E8AD0C1DC8B34C005AFF82 /* Localizable.strings */,
-				418B8E7F1DDC1FEE00EE2D6D /* PaddingLabel.swift */,
 				419AD44E1DF7FD2500ECD034 /* InfoPlist.strings */,
 				419AD4521DF8080D00ECD034 /* icon_setting.png */,
 			);

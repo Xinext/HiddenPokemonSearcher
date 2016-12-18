@@ -89,12 +89,12 @@ class MainViewController: UIViewController, MKMapViewDelegate {
         lcMgr.initMgr(pvc:self)
         lcMgr.StartLocationSearch()
     }
-
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         adMgr.dispAdView(pos: AdModMgr.DISP_POSITION.BOTTOM)
-        
+        initEachViewItem()
         procStateMgr(PROC_EVENT.TAP_RESET)
     }
     
@@ -267,9 +267,6 @@ class MainViewController: UIViewController, MKMapViewDelegate {
         
         // procedures state
         procState = PROC_STATE.WAIT_START
-        
-        // view
-        initEachViewItem()
     }
     
     /**
@@ -294,13 +291,18 @@ class MainViewController: UIViewController, MKMapViewDelegate {
         // guide area
         guideMessageLabel.layer.borderWidth = 2.0
         guideMessageLabel.layer.borderColor = UIColor.white.cgColor
-        guideMessageLabel.layer.cornerRadius = 10.0
+        guideMessageLabel.layer.cornerRadius = 5.0
         guideMessageLabel.text = ""
         guideMessageLabel.numberOfLines = 0
-        guideMessageLabel.text = "１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０"
+        guideMessageLabel.text = "123456789012345678901234567890123456789012345\n" +
+                                    "123456789012345678901234567890123456789012345\n" +
+                                    "123456789012345678901234567890123456789012345\n" +
+                                    "123456789012345678901234567890123456789012345"
+
         guideMessageLabel.fontSizeToFit()
+        guideMessageLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
         guideMessageLabel.text = ""
-        
+
         // button area
         searchStartButton.titleLabel!.lineBreakMode = NSLineBreakMode.byWordWrapping
         searchStartButton.titleLabel!.numberOfLines = 2
@@ -367,6 +369,7 @@ class MainViewController: UIViewController, MKMapViewDelegate {
             dispCurrentLocation()
         case PROC_EVENT.TAP_RESET:
             initProc()
+            initEachViewItem()
             procState = PROC_STATE.WAIT_START
         default:
             // no action
@@ -690,7 +693,7 @@ class MainViewController: UIViewController, MKMapViewDelegate {
             button.backgroundColor = UIColor.hexStr(hexStr: "004679", alpha: 1)
         }
         else {
-           button.backgroundColor = UIColor.hexStr(hexStr: "9193a0", alpha: 1)
+            button.backgroundColor = UIColor.hexStr(hexStr: "9193a0", alpha: 1)
         }
     }
     

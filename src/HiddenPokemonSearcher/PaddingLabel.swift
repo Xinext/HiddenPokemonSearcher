@@ -37,7 +37,7 @@ class PaddingLabel: UILabel {
             return
         }
         var size = self.frame.size
-        size.height = (size.height * 0.8) - (padding.bottom + padding.top)
+        size.height = (size.height) - (padding.bottom + padding.top)
         size.width = (size.width) - (padding.left + padding.right)
         
         let fontName = self.font.fontName
